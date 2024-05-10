@@ -1,0 +1,64 @@
+{
+    "CODEC_KEY": [
+      {
+        "id": "AV1",
+        "name": "AV1"
+      },
+      {
+        "id": "H264",
+        "name": "H264"
+      },
+      {
+        "id": "H265",
+        "name": "H265"
+      },
+      {
+        "id": "VP8",
+        "name": "VP8"
+      },
+      {
+        "id": "VP9",
+        "name": "VP9"
+      }
+    ],
+    "RESOLUTION_KEY": [
+      {
+        "id": "240p",
+        "width": 320,
+        "height": 240
+      },
+      {
+        "id": "480p",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "id": "720p",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "id": "1080i",
+        "width": 1280,
+        "height": 1080
+      },
+      {
+        "id": "1080p",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "id": "2160p",
+        "width": 3840,
+        "height": 2160
+      }
+    ],
+    "FRAMERATE_KEY": [30, 60],
+
+    "S3BUCKET":
+      {
+        "input": "mediatestbed",
+        "output": "mediatestbed-output"
+      }
+    
+}

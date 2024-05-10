@@ -1,0 +1,76 @@
+{
+    "OutputGroups": [
+        {
+            "Name": "File Group AV1",
+            "OutputGroupSettings": {
+                "Type": "FILE_GROUP_SETTINGS",
+                "FileGroupSettings": {
+                    "Destination": ""
+                }
+            },
+            "Outputs": [
+                {
+                    "ContainerSettings": {
+                        "Container": "MP4",
+                        "Mp4Settings": {
+                            "CslgAtom": "INCLUDE",
+                            "CttsVersion": 0,
+                            "FreeSpaceBox": "EXCLUDE",
+                            "MoovPlacement": "PROGRESSIVE_DOWNLOAD"
+                        }
+                    },
+                    "Extension": ".mp4",
+                    "VideoDescription": {
+                        "ScalingBehavior": "DEFAULT",
+                        "TimecodeInsertion": "DISABLED",
+                        "AntiAlias": "ENABLED",
+                        "Sharpness": 50,
+                        "CodecSettings": {
+                            "Codec": "AV1",
+                            "Av1Settings": {
+                                "AdaptiveQuantization": "HIGH",
+                                "FramerateControl": "SPECIFIED",
+                                "FramerateConversionAlgorithm": "DUPLICATE_DROP",
+                                "FramerateDenominator": 1,
+                                "FramerateNumerator": "",
+                                "GopSize": 90,
+                                "RateControlMode": "QVBR",
+                                "SpatialAdaptiveQuantization": "ENABLED",
+                                "MaxBitrate": 6000000  
+                            }
+                        },
+                        "AfdSignaling": "NONE",
+                        "DropFrameTimecode": "ENABLED",
+                        "RespondToAfd": "NONE",
+                        "ColorMetadata": "INSERT",
+                        "Width": "",  
+                        "Height": ""
+                    },
+                    "NameModifier": ""
+                }
+            ]
+        }
+    ],
+    "AdAvailOffset": 0,
+    "Inputs": [
+        {
+            "AudioSelectors": {
+                "Audio Selector 1": {
+                    "Offset": 0,
+                    "DefaultSelection": "DEFAULT"
+                }
+            },
+            "VideoSelector": {
+                "ColorSpace": "FOLLOW",
+                "Rotate": "DEGREE_0"
+            },
+            "FilterEnable": "AUTO",
+            "PsiControl": "USE_PSI",
+            "FilterStrength": 0,
+            "DeblockFilter": "DISABLED",
+            "DenoiseFilter": "DISABLED",
+            "TimecodeSource": "EMBEDDED",
+            "FileInput": ""
+        }
+    ]
+}

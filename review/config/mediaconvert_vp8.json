@@ -1,0 +1,69 @@
+{
+    "OutputGroups": [
+        {
+            "Name": "File Group VP8",
+            "OutputGroupSettings": {
+                "Type": "FILE_GROUP_SETTINGS",
+                "FileGroupSettings": {
+                    "Destination": ""
+                }
+            },
+            "Outputs": [
+                {
+                    "ContainerSettings": {
+                        "Container": "WEBM"
+                    },
+                    "Extension": ".webm",
+                    "VideoDescription": {
+                        "ScalingBehavior": "DEFAULT",
+                        "TimecodeInsertion": "DISABLED",
+                        "AntiAlias": "ENABLED",
+                        "Sharpness": 50,
+                        "CodecSettings": {
+                            "Codec": "VP8",
+                            "Vp8Settings": {
+                                "Bitrate": 10000000,
+                                "FramerateControl": "INITIALIZE_FROM_SOURCE",
+                                "FramerateDenominator": 1,
+                                "FramerateNumerator": "",
+                                "FramerateConversionAlgorithm": "DUPLICATE_DROP",
+                                "GopSize": 90,
+                                "HrdBufferSize": 5000000,
+                                "RateControlMode": "VBR"
+                            }
+                        },
+                        "AfdSignaling": "NONE",
+                        "DropFrameTimecode": "ENABLED",
+                        "RespondToAfd": "NONE",
+                        "ColorMetadata": "INSERT",
+                        "Width": "",  
+                        "Height": ""
+                    },
+                    "NameModifier": ""
+                }
+            ]
+        }
+    ],
+    "AdAvailOffset": 0,
+    "Inputs": [
+        {
+            "AudioSelectors": {
+                "Audio Selector 1": {
+                    "Offset": 0,
+                    "DefaultSelection": "DEFAULT"
+                }
+            },
+            "VideoSelector": {
+                "ColorSpace": "FOLLOW",
+                "Rotate": "DEGREE_0"
+            },
+            "FilterEnable": "AUTO",
+            "PsiControl": "USE_PSI",
+            "FilterStrength": 0,
+            "DeblockFilter": "DISABLED",
+            "DenoiseFilter": "DISABLED",
+            "TimecodeSource": "EMBEDDED",
+            "FileInput": ""
+        }
+    ]
+}

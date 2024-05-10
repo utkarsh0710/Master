@@ -1,0 +1,37 @@
+{ 
+    "AV1": {
+    "name":"AV1",
+    "codec":"AV1",
+    "destination":"s3://mediatestbed-output/",
+    "codec_setting_name":"Av1Settings",
+    "filename":"mediaconvert_av1.json"
+},
+    "H264": {
+        "name":"H264",
+        "codec":"H264",
+        "destination":"s3://mediatestbed-output/",
+        "codec_setting_name":"H264Settings",
+        "filename":"mediaconvert_h264.json"
+    },
+    "H265": {
+        "name":"H265",
+        "codec":"H265",
+        "destination":"s3://mediatestbed-output/",
+        "codec_setting_name":"H265Settings",
+        "filename":"mediaconvert_h265.json"
+    },
+    "VP8": {
+        "name":"VP8",
+        "codec":"VP8",
+        "destination":"s3://mediatestbed-output/",
+        "codec_setting_name":"Vp8Settings",
+        "filename":"mediaconvert_vp8.json"
+    },
+    "VP9": {
+        "name":"VP9",
+        "codec":"VP9",
+        "destination":"s3://mediatestbed-output/",
+        "codec_setting_name":"Vp9Settings",
+        "filename":"mediaconvert_vp9.json"
+    }
+}
